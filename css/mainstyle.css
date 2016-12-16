@@ -1,0 +1,300 @@
+﻿@import "animate.css" all;
+@charset "UTF-8";
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12pt;
+    background-color: #e7ebe7;
+    color: #111;
+}
+h1 {
+    font-size: 14pt;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+    text-align: center;
+	text-transform: uppercase;
+}
+h2 {
+    font-size: 12pt;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+	text-transform: uppercase;
+}
+p, .p2 {
+    font-size: 12pt;
+    text-align: left;
+    text-indent: 1.5em;
+    border-left: 4px solid #999;
+    border-bottom: 2px solid #999;
+    padding-left: 2px;
+    padding-bottom: 2px;
+	margin: 3px 0 3px 0;
+}
+
+table#supertable {
+    font-size: 10pt;
+    font-family: Georgia, Times, serif;
+}
+a[target="_blank"] {
+    background: url(http://htmlbook.ru/example/images/blank.png) 0 3px no-repeat;
+    padding-left: 14px;
+}
+.box {
+    outline: 2px dashed #888;
+    outline-offset: -5px;
+    position: relative;
+    width: 90%;
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding: 1px 12px 1px 12px;
+    margin: 0 auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.box:before, .box:after {
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    content: ' ';
+    left: 12px;
+    bottom: 24px;
+    background: transparent;
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.box:after {
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
+
+
+
+.amenu {                    /* Селекторы стилевых свойств для навигационной панели */
+    color: #fff;
+    display: block; 
+    padding: 6px;
+    text-decoration: none;
+    font-weight: bold;
+	min-width: 120px;
+    transition: all ease 0.5s;
+}
+.limenu {
+    border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+    display: inline-block;
+    background: #707070;
+    margin: 0px 2px 4px 2px;    /* top right bottom left */
+}
+
+
+
+a:hover {
+    color: #00ff00;
+}
+.amenu:hover {
+    color: #fff;
+}
+.box3 {
+    min-height: 800px;
+    outline: 2px dashed #888;
+	overflow: hidden;           /* Для сокрытия появляющихся анимированных блоков div включающих в себя вопросы теста */
+    outline-offset: -5px;
+    position: relative;
+    width: 90%;
+    left: 8px;
+    padding: 20px;
+    margin: 0 auto;
+	margin-bottom: 25px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 24px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.animatedother {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.animatedmenu {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+ #topmenu { -webkit-animation-name: rotateInDownLeft; }
+
+p:first-letter {
+    font-size: 120%;
+    color: navy;
+    font-weight: bold;
+}
+.amenu:hover, td > img:hover {
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+    transition: all ease 0.2s;
+    text-decoration: underline;
+    border-radius: 20px;
+	  -moz-border-radius: 20px;
+	  -webkit-border-radius: 20px;
+}
+
+td > img:hover { border: 2px solid #444; }
+
+.limenu:hover {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    background: #30303A;
+    border-radius: 20px;
+	  -moz-border-radius: 20px;
+	  -webkit-border-radius: 20px;
+}
+
+ #bar li {
+    margin-bottom: 5px;
+}
+ #bar:hover {
+    top: 0;
+}
+
+input[type="text"]:focus {
+    color: #040;
+    outline: 4px solid #5f5
+}
+	
+ #bar {
+    top: -12.0em;
+    right: 14em;
+    position: absolute;
+    width: 2em;
+	transition-property: top;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+}
+
+.questions {
+	color: #204080;
+	font-weight: bold;
+	margin: 0.5em 0 0 4em;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+.variants {
+	margin: 0;
+	padding: 0;
+}
+
+.test_selection {
+	width: 50%;
+	margin-left: 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+.test_list {
+	padding: 0px;
+	margin: 0px;
+}
+
+.right_variant {
+	color: #3a3;
+	font-weight: bold;
+}
+
+.wrong_variant {
+	color: #a33;
+	font-weight: bold;
+}
+
+.selected_variant:indeterminate {
+	-webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: flash;
+    animation-name: flash;
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+	-webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.selected_variant:hover + .designated_variant {
+	font-weight: bold;
+}
+
+.selected_variant:checked + .designated_variant{
+	-webkit-animation-duration:0.5s;
+    animation-duration: 0.5s;
+	-webkit-animation-name: pulse;
+    animation-name: pulse;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#selection_test_input {
+	width: 150px;
+}
+
+.designated_variant, .selected_variant {
+	cursor: pointer;
+}
+
+.results_input {
+	width: 200px;
+	position: fixed;
+	bottom: 7%;
+	right: 10%;
+}
+
+.animated.fadeInUp {
+	width: 84%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type=radio] {
+	position: relative;
+	left: 8px;
+}
+
+label {
+	padding: 0.2em;
+}

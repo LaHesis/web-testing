@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+    <title>Форма с сохранением в MySQL</title>
+ 
+<style type="text/css">
+<!--
+body { font: 12px Georgia; color: #666666; }
+h3 { font-size: 16px; text-align: center; }
+table { width: 400px; border-collapse: collapse; margin: 0px auto; background: #E6E6E6; }
+td { padding: 3px; }
+input { width: 250px; border: solid 1px #CCCCCC; }
+textarea { width: 250px; height: 100px; border: solid 1px #CCCCCC; }
+.buttons { width: auto; border: double 1px #666666; background: #D6D6D6; }
+-->
+</style>
+</head>
+<body>
+ 
+<h3>Пример формы с сохранением данных в MySQL</h3>
+ 
+<form action="php/save_form.php" method="post" name="test_form">
+<table border="1" cellpadding="0" cellspacing="0">
+ <tr>
+  <td colspan="2" align="center"><strong>Отправка запроса</strong></td>
+ </tr>
+ <tr>
+  <td width="150">Имя :</td>
+  <td><input type="text" name="test_name" maxlength="30" /></td>
+ </tr>
+ <tr>
+  <td width="150">E-Mail :</td>
+  <td><input type="text" name="test_mail" maxlength="30" /></td>
+ </tr>
+ <tr>
+  <td width="150">Тема сообщения :</td>
+  <td><input type="text" name="test_theme" maxlength="30" /></td>
+ </tr>
+ <tr>
+  <td width="150">Сообщение :</td>
+  <td><textarea name="test_mess"></textarea></td>
+ </tr>
+ <tr>
+  <td colspan="2" align="center">
+   <input type="submit" class="buttons" value="Отправить запрос" />
+   <input type="reset" class="buttons" value="Очистить" />
+  </td>
+ </tr>
+</table>
+</form>
+ 
+ 
+ 
+<form action="php/view_data.php" method="post" name="view_result">
+<table>
+ <tr>
+  <td align="center"><input type="submit" class="buttons" value="Посмотреть ранее сохраненные данные" /></td>
+ </tr>
+</table>
+</form>
+ 
+<form action="php/del_data.php" method="post" name="delete_data">
+<table>
+ <tr>
+  <td align="center"><input type="submit" class="buttons" value="Удаление данных" /></td>
+ </tr>
+</table>
+</form>
+ 
+<form action="php/update_data.php" method="post" name="update_data">
+<table>
+ <tr>
+  <td align="center"><input type="submit" class="buttons" value="Редактирование и обновление данных" /></td>
+ </tr>
+</table>
+</form>
+
+<!-- Источник: http://www.html.by/threads/986-Urok-prakticheskogo-primenenija-PHP-MySQL -->
+
+ 
+</body>
+</html>
