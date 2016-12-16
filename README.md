@@ -1,0 +1,1 @@
+It's a web-application or site that contents various DB-stored tests. Users can pass these and see results.
