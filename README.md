@@ -2,11 +2,11 @@ It's a web-application or site that contents various DB-stored tests. Users can 
 Use local web-server to try out working of the application. It's necessary to put all files to "root" directory of USBWebServer (for example, it's USBWebServer) and to open on localhost file "indexCSS.html" then.
 Application Screenshots:
 
-![Questions viewing](https://github.com/LaHesis/web-testing/raw/master/Screenshots/Questions viewing.png)
+![Questions viewing](https://github.com/LaHesis/web-testing/raw/master/screenshots/Questions viewing.png)
 
 Questions viewing
 
-![Testing results](https://github.com/LaHesis/web-testing/raw/master/Screenshots/Testing results.png)
+![Testing results](https://github.com/LaHesis/web-testing/raw/master/screenshots/Testing results.png)
 
 Testing results
 
